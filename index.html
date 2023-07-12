@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/reset.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&display=swap" rel="stylesheet">
+  <script src="javascript/js.js"></script>
+  <title>Calculadora</title>
+</head>
+<body>
+  <header>
+    <h1 title="Ex: 77+33, 225x225, 8/2.">Calculadora para Operações simples</h1>
+  </header>
+  <main>
+    <div id="Calculadora">
+      <input type="text" id="painel"><button onclick="calcular()" id="igualapagar">=</button><br>
+      <button onclick="display('1')" id="um" class="btn">1</button><button onclick="display('2')" id="dois" class="btn">2</button><button class="btn" id="tres" onclick="display('3')">3</button><button onclick="Operador('+')" id="mais"class="btn">+</button><br>
+      <button id="quatro" onclick="display('4')" class="btn">4</button><button id="cinco" onclick="display('5')" class="btn">5</button><button id="seis" onclick="display('6')" class="btn">6</button><button onclick="Operador('-')" id="menos" class="btn">-</button><br>
+      <button id="sete" onclick="display('7')" class="btn">7</button><button id="oito" class="btn" onclick="display('8')">8</button><button id="nove" onclick="display('9')" class="btn">9</button><button id="vezes" onclick="Operador('X')" class="btn">X</button><br>
+      <button onclick="display(',')" id="virgula" class="btn">,</button><button id="zero" onclick="display('0')" class="btn">0</button><button onclick="displaydeletar()" id="igualapagar">Apagar</button><button onclick="Operador('/')" id="dividido" class="btn">/</button>
+      </button>
+    </div>
+  </main>
+  <footer><h6>Utilize o Teclado númerico do Projeto</h6></footer>
+</body>
+</html>
